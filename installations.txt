@@ -1,0 +1,19 @@
+***apache on ubuntu***
+
+#apt-get update
+#apt-get install -y apache2
+
+***apache on redhat***
+
+#yum update
+#yum install -y httpd
+
+***tomcat on ubuntu***
+
+#apt-get update 
+#apt-get install -y tomcat7
+
+***tomcat on redhat ****
+
+#yum update
+#yum install -y tomcat

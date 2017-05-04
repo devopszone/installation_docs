@@ -1,0 +1,24 @@
+download zip/tar file of nexus
+
+#wget https://sonatype-download.global.ssl.fastly.net/nexus/oss/nexus-2.14.3-02-bundle.tar
+#sudo cp nexus-2.14.3-02-bundle.tar.gz /usr/local
+# cd /usr/local
+# sudo tar xvzf nexus-2.14.3-02-bundle.tar.gz
+# sudo ln -s nexus-2.14.3-02 nexus 
+$NEXUS_HOME/conf/nexus.properties.
+
+sudo useradd -m nexus -s /bin/bash
+$NEXUS_HOME/bin/====>
+#vi nexus
+ RUN_AS_USER=nexus 
+
+to start to nexus repositary Manager
+
+cd /usr/local/nexus
+./bin/nexus console
+./bin/nexus start
+
+nexus.bat for windows
+
+***SonarQube insatallation on linux*****
+https://devopscube.com/setup-and-configure-sonarqube-on-linux/

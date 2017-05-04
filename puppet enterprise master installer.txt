@@ -1,0 +1,60 @@
+puppet installation:
+---------------------
+
+    1  wget https://s3.amazonaws.com/pe-builds/released/2017.1.1/puppet-enterprise-2017.1.1-ubuntu-14.04-amd64.tar.gz
+    2  ls
+    3  tar -xvzf puppet-enterprise-2017.1.1-ubuntu-14.04-amd64.tar.gz
+    4  ls
+    5  cd puppet-enterprise-2017.1.1-ubuntu-14.04-amd64
+    6  ls  
+    7  ./puppet-enterprise-installer
+======================================
+
+
+go to browser
+-------------
+enter master ip
+==>  https://52.88.95.216
+
+go to puppet master command prompt and enter
+--------------------------------------------
+hostname -f
+
+
+ip-172-31-7-247.us-west-2.compute.internal
+==========================================
+copy above ip adress in the below address(private url box)
+  
+go to browser
+
+
+  https://52.88.95.216
+   
+1  at the last give password
+
+2 deploy
+
+
+=========================================
+afyter deploying 
+
+login in to
+
+
+puppet server with your user name and password
+
+
+click on the node 
+  
+in that go to the click on unsigned Certificates
+  
+  copy curl command in the puppet node instance command prompt
+
+========================================================
+ goto puppet node command
+--------------------------
+
+curl -k https://172.31.7.247:8140/packages/current/install.bash | sudo bash
+
+--accept the certificate verification and then run #puppet agent -t in node..
+--the changes are reflected when you run #puppet agent -t in master..

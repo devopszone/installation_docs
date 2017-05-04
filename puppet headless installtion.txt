@@ -1,0 +1,66 @@
+HEADLESS PUPPET AGENT
+----------------------
+
+goto the this link
+
+https://puppet.com/download-puppet-enterprise
+
+
+enter on downlond
+
+   click on the puppet enterprise agents  
+
+ Windows Server 2008 R2/2012, Windows Server 2016, Windows 7/8/Vista/10  (64-bit) 
+  
+
+install that
+
+
+=============================
+
+step:1 
+ 
+ first launch two instances
+   
+  
+   a)ubuntu 14.04   b)redhat
+============================================
+
+
+goto this link
+ 
+
+ http://www.qualitythought.in/wp-content/uploads/2016/11/PuppetConfiguration.pdf
+
+
+=========
+
+
+ goto ubuntu command promprt
+
+    enter the below commands
+------------------------------
+ 
+
+1.wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+
+
+2. Execute dpkg -i puppetlabs-release-pc1-trusty.deb
+
+3. Execute apt-get update
+
+4. apt-get install puppet-agent
+
+========================================
+goto redhat command promat
+--------------------------
+enter below commands
+
+1.sudo yum install -y http://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+
+2. yum install puppet-agent
+
+3. ls -l /opt/puppetlabs/bin/
+
+
+yum repo list
